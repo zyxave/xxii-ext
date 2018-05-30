@@ -1,0 +1,72 @@
+<div data-name="home" class="page">
+
+  <!-- Top Navbar -->
+  <div class="navbar no-shadow color-red">
+    <div class="navbar-inner">
+      <!-- Left Navbar -->
+      <div class="left">
+        <div class="block">
+          <a href="#" data-panel="left" class="panel-open">
+            <i class="f7-icons">menu</i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Navbar Title -->
+      <div class="title">Now Showing</div>
+
+      <!-- Right Navbar -->
+      <div class="right">
+        <!-- Link to enable searchbar -->
+        <a class="link icon-only searchbar-enable" data-searchbar=".searchbar">
+          <i class="f7-icons">search_strong</i>
+          <!-- <i class="icon material-icons md-only">search</i> -->
+        </a>
+      </div>
+
+      <!-- Searchbar is a direct child of "navbar-inner" -->
+      <form class="searchbar searchbar-expandable searchbar-init" 
+            data-search-container=".search-here" 
+            data-search-in=".card-header">
+        <div class="searchbar-inner">
+          <div class="searchbar-input-wrap">
+            <input type="search" placeholder="Search"/>
+            <i class="searchbar-icon"></i>
+            <span class="input-clear-button"></span>
+          </div>
+          <span class="searchbar-disable-button">Cancel</span>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- Scrollable page content -->
+  <div class="page-content">
+    <div class="searchbar-backdrop"></div>
+    <div class="list searchbar-found search-here" style="margin: 0px;">
+      <ul id="listMovies">
+        <script type="text/template7" id="t7Home">
+        {{#each movies}}
+          <li class="item-content" style="padding-left: 0px">
+            <div class="item-inner" style="padding-right: 0px">
+              <div class="card demo-card-header-pic">
+                  <div style="background-image:url('{{cover}}')" class="card-header align-items-flex-end">{{title}}</div>
+                  <div class="card-content card-content-padding">
+                  <p class="date">Showtime: 13:00 | 15:30 | 18:00</p>
+                  <p>{{synopsis}}</p>
+                  </div>
+                  <div class="card-footer"><a href="/ticket/{{id_movie}}" class="link">Buy Ticket</a></div>
+              </div>
+            </div>
+          </li>
+        {{/each}}
+        </script>
+      </ul>
+    </div>
+    <div class="block searchbar-not-found">
+      <div class="block-inner">Nothing found</div>
+    </div>
+  </div>
+
+</div>

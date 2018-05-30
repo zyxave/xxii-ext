@@ -1,0 +1,12 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "XXII",
+  "short_name": "XXII",
+  "version": "com.ubaya.xxii",
+  "description": "XXII is a mobile apps for purchasing cinema's tickets.",
+  "author": "zyxave",
+  "icons": [],
+  "start_url": "index.html",
+  "theme_color": "#2196f3"
+}

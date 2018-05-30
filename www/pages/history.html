@@ -1,0 +1,39 @@
+<div data-name="history" class="page">
+
+  <!-- Top Navbar -->
+  <div class="navbar no-shadow color-red">
+    <div class="navbar-inner">
+    <!-- Left Navbar -->
+    <div class="left">
+      <div class="block">
+        <a href="/home/" class="back" data-force="true">
+          <i class="f7-icons">chevron_left</i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Navbar Title -->
+    <div class="title">History</div>
+
+  </div>
+</div>
+
+  <!-- Scrollable page content -->
+  <div class="page-content">
+    <script type="text/template7" id="t7History">
+      {{#each movies}}
+      <div class="card">
+        <div class="card-content card-content-padding">
+          <div class="card-header"><strong>{{title}}</strong></div>
+          <div class="card-content card-content-padding">
+            Show date: {{showdate}}<br>
+            Show time: {{showtime}}<br>
+            Seat: {{seatlist}} / {{qty}} seat(s)
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </script>
+  </div>
+
+</div>

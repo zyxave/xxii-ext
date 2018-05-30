@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' http://ksm-if.com data: gap: ms-appdata: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src filesystem: data: *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; connect-src *;">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS -->
+    <link rel="stylesheet" href="css/framework7.min.css">
+    <link rel="stylesheet" href="css/framework7-icons.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+    <!-- <link rel="stylesheet" href="path/to/my-app.css"> -->
+  </head>
+  <body>
+    <!-- App root element -->
+    <div id="app">
+      <!-- Left panel -->
+      <div class="panel panel-left panel-cover swipeNoFollow closeByBackdropClick">
+          <div class="block list">
+            <p>Going somewhere?</p>
+            <ul>
+              <li class="item-content">
+                <a href="/home/" data-panel="left" class="panel-close about-button">
+                  <div class="item-inner">
+                    <div class="item-title">Home</div>
+                  </div>
+                </a>
+              </li>
+              <li class="item-content">
+                <a href="/profile/" data-panel="left" class="panel-close about-button">
+                  <div class="item-inner">
+                    <div class="item-title">Profile</div>
+                  </div>
+                </a>
+              </li>
+              <li class="item-content">
+                <a href="/history/" data-panel="left" class="panel-close about-button">
+                  <div class="item-inner">
+                    <div class="item-title">Purchase History</div>
+                  </div>
+                </a>
+              </li>
+              <li class="item-content">
+                <a href="/password/" data-panel="left" class="panel-close about-button">
+                  <div class="item-inner">
+                    <div class="item-title">Change Password</div>
+                  </div>
+                </a>
+              </li>
+              <li class="item-content">
+                <a href="/device/" data-panel="left" class="panel-close about-button">
+                  <div class="item-inner">
+                    <div class="item-title">Manage Devices</div>
+                  </div>
+                </a>
+              </li>
+              <li class="item-content">
+                <a href="#" data-panel="left" class="panel-close about-button" id="btnlogout">
+                  <div class="item-inner">
+                    <div class="item-title">Log Out</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+
+      <!-- Statusbar overlay -->
+      <div class="statusbar"></div>
+
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+
+      </div>
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/template7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-deviceinformation"
+        version="2.0.2">
+
+    <name>DeviceInformation</name>
+    <description>This plugin will get most of the information available through Android's Telephony Manager and Account Manager classes.</description>
+    <author>Charlie Hulcher, Veronica Liesaputra</author>
+    <keywords>android, telephony manager, phone number, device information, account details</keywords>
+    <license>MIT</license>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+    <js-module src="www/deviceinformation.js" name="DeviceInformation">
+        <clobbers target="cordova.plugins.deviceInformation" />
+    </js-module>
+
+    <platform name="android">
+
+        <source-file src="src/com/upchannel/cordova/plugins/DeviceInformation.java" target-dir="src/com/upchannel/cordova/plugins" />
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="DeviceInformation">
+                <param name="android-package" value="com.upchannel.cordova.plugins.DeviceInformation" />
+            </feature>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+            <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+        </config-file>
+     </platform>
+
+</plugin>

@@ -1,0 +1,65 @@
+<div data-name="profile" class="page">
+
+  <!-- Top Navbar -->
+  <div class="navbar no-shadow color-red">
+    <div class="navbar-inner">
+
+    <!-- Left Panel -->
+    <div class="left">
+    <div class="block">
+      <a href="/home/" class="back" data-force="true">
+        <i class="f7-icons">chevron_left</i>
+      </a>
+    </div>
+    </div>
+
+    <!-- Navbar Title -->
+    <div class="title">Profile</div>
+
+    </div>
+  </div>
+
+  <!-- Scrollable page content -->
+  <div class="page-content">
+    <script type="text/template7" id="t7Profile">
+      <div class="block" style="text-align: center; background-color: #f7f7f7; padding: 30px 16px 2px; margin: 0px;">
+        <div class="block" style="margin: 10px;">
+          <img src="{{picture}}" id="propic" name="propic" style="width: 100px; height: 100px; border-radius: 50%; border: 1px solid #f7f7f7; margin: 0px auto;" />
+        </div>
+        <!-- <div class="block">
+            <a href="#" class="button button-fill button-round color-red" id="btnpicture">Change Picture</a>
+        </div> -->
+        <!-- <div class="block" style="margin: 0px;">
+          <a href="#" class="button button-fill button-round color-red" id="btnphoto">Take Photo</a>
+        </div> -->
+      </div>
+      <div class="block">
+          <div class="list">
+            <ul>
+              <li>
+                <div class="item-content item-input" style="width: 100%">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Display Name</div>
+                    <div class="item-input-wrap">
+                      <input type="text" name="name" value="{{name}}" readonly>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item-content item-input" style="width: 100%">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Username</div>
+                    <div class="item-input-wrap">
+                      <input type="text" name="username" value="{{username}}" readonly>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </script>
+  </div>
+
+</div>

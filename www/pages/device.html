@@ -1,0 +1,48 @@
+<div data-name="device" class="page">
+
+  <!-- Top Navbar -->
+  <div class="navbar no-shadow color-red">
+    <div class="navbar-inner">
+    <!-- Left Panel -->
+    <div class="left">
+    <div class="block">
+      <a href="/home/" class="back" data-force="true">
+        <i class="f7-icons">chevron_left</i>
+      </a>
+    </div>
+    </div>
+
+    <!-- Navbar Title -->
+    <div class="title">Devices</div>
+
+  </div>
+</div>
+
+  <!-- Scrollable page content -->
+  <div class="page-content">
+    <div class="block">
+      <div class="block">
+        <a class="button button-fill button-round color-red" id="btnGenerate">Generate Access Code</a>
+      </div>
+    </div>
+    <div class="list">
+      <ul id="listDevices">
+        <script type="text/template7" id="t7Device">
+          {{#each devices}}
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <div class="card-header"><strong>{{ number }}. {{ os }}</strong></div>
+                <div class="card-content card-content-padding">
+                  Version: {{ version }}<br>
+                  Last Login: {{ last_log }}<br>
+                </div>
+              </div>
+              {{ action }}
+            </div>
+            {{/each}}
+        </script>
+      </ul>
+    </div>
+  </div>
+
+</div>

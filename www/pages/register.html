@@ -1,0 +1,64 @@
+<div data-name="signup" class="page no-navbar no-toolbar no-swipeback">
+  <div class="page-content login-screen-content">
+    <div class="login-screen-title">Registration</div>
+    <form>
+      <div class="list">
+        <ul>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Name</div>
+              <div class="item-input">
+                <input type="text" name="name" id="nameR" placeholder="Your name" pattern="[A-Za-z0-9]{4,20}" required validate autofocus>
+              </div>
+              <div class="item-title item-label match" style="text-align: right; color: grey;">Alphanumeric only with 4 - 20 characters</div>
+            </div>
+          </li>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Username</div>
+              <div class="item-input">
+                <input type="text" name="username" id="usernameR" placeholder="Your username" pattern="[A-Za-z0-9]{4,15}" required validate>
+              </div>
+              <div class="item-title item-label match" style="text-align: right; color: grey;">Alphanumeric only with 4 - 15 characters</div>
+            </div>
+          </li>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Password</div>
+              <div class="item-input">
+                <input type="password" name="password" id="passwordR" placeholder="Your password" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{5,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 5 characters" required validate>
+              </div>
+              <div class="item-title item-label match" style="text-align: right; color: grey;">At least 5 characters and contain alphanumeric</div>
+            </div>
+          </li>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Confirm Password</div>
+              <div class="item-input">
+                <input type="password" name="confirm" id="confirmR" placeholder="Confirm password" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{5,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 5 characters" required validate>
+                <div class="item-title item-label match" style="text-align: right; color: red; visibility: hidden; display: none;">Password doesn't match!</div>
+              </div>
+            </div>
+          </li>
+          <li class="item-content item-input" style="margin-top: 35%;">
+            <div class="item-inner">
+              <div class="item-title item-label"></div>
+              <div class="item-input">
+               <a href="#" id="btnregister" class="button button-fill button-round color-red">REGISTER</a>
+               <!-- <input type="submit" name="register" value="REGISTER" id="btnregister" class="button button-fill button-round color-red"> -->
+              </div>
+            </div>
+          </li>
+          <li class="item-content item-input" style="margin-top: 5%;">
+            <div class="item-inner">
+              <div class="item-title item-label"></div>
+              <div class="item-input" style="text-align: center;">
+                <i><a href="/login/" class="back" data-force="true">I have an account!</a></i>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </form>
+  </div>
+</div>

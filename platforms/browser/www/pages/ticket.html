@@ -1,0 +1,90 @@
+<div data-name="ticket" class="page">
+
+  <!-- Top Navbar -->
+  <div class="navbar no-shadow color-red">
+    <div class="navbar-inner">
+
+      <!-- Left Panel -->
+      <div class="left">
+        <div class="block">
+          <a href="/home/" class="back" data-force="true">
+            <i class="f7-icons">chevron_left</i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Navbar Title -->
+      <div class="title">Buy Ticket</div>
+      
+    </div>
+  </div>
+
+  <!-- Scrollable page content -->
+  <div class="page-content">
+    <form class="list" id="my-form">
+      <ul>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Movie</div>
+              <div class="item-input-wrap">
+                <input type="text" name="movie" id="textTitle" readonly>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Pick Showtime</div>
+              <div class="item-input-wrap">
+                <select name="showtime">
+                  <option value="1" selected>13:00</option>
+                  <option value="2">15:30</option>
+                  <option value="3">18:00</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Pick Studio</div>
+              <div class="item-input-wrap">
+                <select name="studio">
+                  <option value="A" class="stdopt" selected>A</option>
+                  <option value="B" class="stdopt">B</option>
+                  <option value="C" class="stdopt">C</option>
+                  <option value="D" class="stdopt">D</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Number of Ticket</div>
+              <div class="item-title item-label" id="able-seat"></div>
+              <div class="item-title item-label" id="able-code"></div>
+              <div class="item-input-wrap">
+                <select name="qty" id="qty"></select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label"></div>
+              <div class="item-input-wrap">
+                <input type="button" name="btnpick" class="button button-fill button-big button-round color-red" id="btnpick" value="Pick Seat">
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </form>
+
+</div>
