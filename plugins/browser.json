@@ -19,9 +19,6 @@
     "cordova-plugin-device": {
       "PACKAGE_NAME": "com.ubaya.xxii"
     },
-    "cordova-plugin-deviceinformation": {
-      "PACKAGE_NAME": "com.ubaya.xxii"
-    },
     "cordova-plugin-dialogs": {
       "PACKAGE_NAME": "com.ubaya.xxii"
     },

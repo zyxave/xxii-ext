@@ -103,14 +103,6 @@
     "is_top_level": true,
     "variables": {}
   },
-  "cordova-plugin-deviceinformation": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-deviceinformation"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
   "cordova-plugin-barcodescanner": {
     "source": {
       "type": "registry",

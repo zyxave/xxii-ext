@@ -67,14 +67,6 @@ module.exports = [
         "runs": true
     },
     {
-        "file": "plugins/cordova-plugin-deviceinformation/www/deviceinformation.js",
-        "id": "cordova-plugin-deviceinformation.DeviceInformation",
-        "pluginId": "cordova-plugin-deviceinformation",
-        "clobbers": [
-            "cordova.plugins.deviceInformation"
-        ]
-    },
-    {
         "file": "plugins/cordova-plugin-dialogs/www/notification.js",
         "id": "cordova-plugin-dialogs.notification",
         "pluginId": "cordova-plugin-dialogs",
@@ -430,7 +422,6 @@ module.exports.metadata =
     "cordova-plugin-battery-status": "1.2.5",
     "cordova-plugin-camera": "2.4.1",
     "cordova-plugin-device": "1.1.7",
-    "cordova-plugin-deviceinformation": "2.0.2",
     "cordova-plugin-dialogs": "1.3.4",
     "cordova-plugin-file": "4.3.3",
     "cordova-plugin-geolocation": "2.4.3",
