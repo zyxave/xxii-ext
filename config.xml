@@ -8,6 +8,7 @@
         zyxave
     </author>
     <content src="index.html" />
+    <preference name="AndroidPersistentFileLocation" value="Compatibility" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
     <platform name="android">
