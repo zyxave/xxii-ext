@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.ubaya.xxii" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>XXII</name>
+<widget id="com.ubaya.xxii-ext" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>XXII 2</name>
     <description>
-        XXII is a mobile apps for purchasing cinema's tickets.
+        XXII 2 is a mobile apps for purchasing cinema's tickets with additional 2 Factor Authorization.
     </description>
     <author email="zyxave@gmail.com">
         zyxave
