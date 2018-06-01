@@ -80,9 +80,9 @@ var app = new Framework7({
 					}
 					else if(!localStorage.getItem('uid')){
 						devInfo = localStorage.getItem('devInfo');
-						app.request.post(app_path + 'users.php',
+						app.request.post(app_path + 'devices.php',
 							{
-								action: 'getUid',
+								action: 'initDevice',
 								devInfo: devInfo
 							},
 							function(data){
@@ -96,12 +96,9 @@ var app = new Framework7({
 					*/
 
 					$$('#btnlogin').on('click', function(){
-						// localStorage.removeItem('uid');
-						// localStorage.removeItem('secretadmin');
-						// localStorage.removeItem('userId');
-						// localStorage.removeItem('devInfo');
+						// localStorage.clear();
 
-						app.dialog.progress();
+						// app.dialog.progress();
 
 						var username = $$('#username').val();
 						var password = $$('#password').val();
@@ -131,7 +128,7 @@ var app = new Framework7({
 							},
 							function(data){
 								var obj = JSON.parse(data);
-								// app.dialog.alert(data);
+								// app.dialog.alert(obj);
 
 								setTimeout(function(){ 
 									app.dialog.close();
@@ -279,6 +276,9 @@ var app = new Framework7({
 								else if(obj == 'SUC'){
 									page.router.navigate('/home/', { reloadAll: true });
 								}
+								else if(obj == 'SEC'){
+									app.dialog.alert("You don't have access to this account!");
+								}
 								else if(obj == 'ERR'){
 									localStorage.removeItem('userId');
 									app.dialog.alert("SYSTEM ERROR!");
@@ -352,27 +352,21 @@ var app = new Framework7({
 									user: username, 
 									pass: password, 
 									name: name,
-									devInfo: devInfo,
 									uid: uid
 								},
 								function(data){
 									// console.log(data);
 									var obj = JSON.parse(data);
+									// app.dialog.alert(obj);
 										
-									if(obj.substr(0, 1) == '0'){
+									if(obj.substr(0, 3) == 'USP'){
 										app.dialog.alert("Username already exists!", "Failed",
 											function(e){
 												page.router.navigate('/register/');
 											});
 									}
-									else if(obj.substr(0, 1) == '2'){
-										app.dialog.alert("ERROR in mysql syntax!", "Failed",
-											function(e){
-												page.router.navigate('/register/');
-											});
-									}
-									else if(obj.substr(0, 1) == '1'){
-										localStorage.setItem('secret' + username, obj.substr(1, obj.length - 1));
+									else if(obj.substr(0, 3) == 'SUC'){
+										localStorage.setItem('secret' + username, obj.slice(3));
 										app.dialog.alert("Registered!", "Success",
 											function(e){
 												page.router.navigate('/login/');
