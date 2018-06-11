@@ -5,8 +5,8 @@ var app_path = base_path + 'application/';
 var asset_path = base_path + 'asset/';
 
 var app = new Framework7({
-	name: 'XXII',
-	id: 'com.ubaya.zyxave.xxii',
+	name: 'XXII 2',
+	id: 'com.zyxave.xxii2',
 	root: '#app',
 	theme: 'md',
 	cache: false,
